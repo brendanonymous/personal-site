@@ -1,0 +1,82 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* light theme */
+[color-theme="light"] {
+  --bg-color: rgb(105, 218, 233);
+  --text-color: black;
+  --btn-bg: #007bff;
+  --btn-hover: #010390;
+  --cool-char-color: rgb(255, 87, 87);
+  --cool-char-hover-color: rgb(227, 231, 10);
+}
+
+/* dark theme */
+[color-theme="dark"] {
+  --bg-color: #333333;
+  --text-color: white;
+  --btn-bg: #bb86fc;
+  --btn-hover: #7540ca;
+  --cool-char-color: #FFCBA4;
+  --cool-char-hover-color: rgb(30, 136, 21);
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color);
+  transition: background 0.8s ease, color 0.8s ease;
+}
+
+.cool-char {
+  display: inline-block;
+  color: var(--cool-char-color);
+  transition: color 1s ease-out;
+}
+.cool-char:hover {
+  color: var(--cool-char-hover-color);
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--btn-bg);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 1s ease-out;
+}
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.theme-toggle-btn {
+  position: absolute;
+  background: none;
+  top: 30px;
+  right: 35px;
+  border: none;
+  padding: 0;
+}
+.theme-toggle-btn img {
+  width: 45px;
+  height: 45px;
+}
+.theme-toggle-btn:focus {
+  outline: 0.00001px solid #cecece;
+  border-radius: 20px;
+}
