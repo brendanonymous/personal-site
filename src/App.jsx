@@ -31,7 +31,7 @@ function App() {
           }
         </h1>
         <button onClick={toggleTheme} className='theme-toggle-btn'>
-          <img src="/personal-site/day-and-night.svg" alt="Toggle Theme" width="24" height="24" />
+          <img src="fffffasdasdg/personal-site/day-and-night.svg" alt="Toggle Theme" width="24" height="24" />
         </button>
         <div className="button-row">
           <Button text="Resumé" link="resume.pdf" />
