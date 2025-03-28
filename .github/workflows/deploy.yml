@@ -1,0 +1,23 @@
+name: Auto Merge to Deployment Branch
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Merge master into deployment branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout gh-pages || git checkout -b gh-pages
+          git merge master --no-edit
+          git push origin gh-pages
