@@ -40,7 +40,6 @@ function App() {
           <Button text="Github" link="https://github.com/brendanonymous" />
           <Button text="LinkedIn" link="https://linkedin.com/in/brendanlauck" />
           <Button text="Email Me" link="mailto:brendanlauck@yahoo.com" />
-          <Button text="Instagram" link="https://www.instagram.com/brendanonymouss" />
           <Button text="Stay at My Place" link="https://airbnb.com/h/mountain-view-scottsdale" />
         </div>
       </div>
