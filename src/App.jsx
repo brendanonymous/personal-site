@@ -36,7 +36,7 @@ function App() {
           <img src="/personal-site/day-and-night.svg" alt="Toggle Theme" width="24" height="24" />
         </button>
         <div className="button-row">
-          <Button text="Resumé" link="resume.pdf" />
+          <Button text="Resumé" link="/personal-site/resume.pdf" />
           <Button text="Github" link="https://github.com/brendanonymous" />
           <Button text="LinkedIn" link="https://linkedin.com/in/brendanlauck" />
           <Button text="Email Me" link="mailto:brendanlauck@yahoo.com" />
