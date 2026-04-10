@@ -1,1 +1,1 @@
-I'm currently learning frontend development with react, so this is my first project.
+personal site built with React
