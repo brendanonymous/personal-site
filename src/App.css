@@ -1,28 +1,104 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
+/*TODO: Fix light theme*/
 /* light theme */
 [color-theme="light"] {
-  --bg-color: rgb(105, 218, 233);
-  --text-color: black;
+  --bg-color: rgb(141, 203, 211);
+  --text-color: rgb(255, 255, 255);
   --btn-bg: #007bff;
   --btn-hover: #010390;
-  --cool-char-color: rgb(255, 87, 87);
+  --cool-char-color: rgb(154, 26, 145);
   --cool-char-hover-color: rgb(227, 231, 10);
 }
 
 /* dark theme */
 [color-theme="dark"] {
   --bg-color: #333333;
-  --text-color: white;
+  --text-color: rgb(251, 243, 207);
   --btn-bg: #bb86fc;
   --btn-hover: #7540ca;
-  --cool-char-color: #FFCBA4;
-  --cool-char-hover-color: rgb(30, 136, 21);
+  --cool-char-color: #44f464;
+  --cool-char-hover-color: #f55ad6;
+}
+
+section {
+  scroll-margin-top: 90px;
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+
+#contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 300px;
+}
+
+#projects {
+  min-height: 100vh;
+  padding-bottom: 300px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  padding: 1.5rem 0;
+
+  background: rgba(24, 24, 24, 0);
+  backdrop-filter: blur(40px);
+
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+  color: white;
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-me-summary {
+  width: 900px;
+  font-size: 1.5rem;
+  font-weight: 350;
+  height: auto;
+  display: flex;
+}
+
+.about-me-image {
+  width: 600px;
+  height: auto;
+  display: flex;
+  border-radius: 20px;
 }
 
 body {
@@ -34,14 +110,14 @@ body {
 .cool-char {
   display: inline-block;
   color: var(--cool-char-color);
-  transition: color 1s ease-out;
+  transition: color 0.25s ease-out;
 }
 .cool-char:hover {
   color: var(--cool-char-hover-color);
 }
 
 .container {
-  text-align: center;
+  /* text-align: center; */
   padding: 2rem;
 }
 
@@ -55,7 +131,7 @@ body {
   padding: 10px 20px;
   border: none;
   background-color: var(--btn-bg);
-  color: rgb(255, 255, 255);
+  color: var(--text-color);
   cursor: pointer;
   border-radius: 20px;
   transition: background-color 1s ease-out;
@@ -67,10 +143,12 @@ body {
 .theme-toggle-btn {
   position: absolute;
   background: none;
-  top: 30px;
+  top: 50%;
   right: 35px;
+  transform: translateY(-50%);
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 .theme-toggle-btn img {
   width: 45px;
