@@ -6,12 +6,14 @@
 /*TODO: Fix light theme*/
 /* light theme */
 [color-theme="light"] {
-  --bg-color: rgb(141, 203, 211);
+  --bg-color: rgb(95, 179, 190);
   --text-color: rgb(255, 255, 255);
   --btn-bg: #007bff;
   --btn-hover: #010390;
   --cool-char-color: rgb(154, 26, 145);
   --cool-char-hover-color: rgb(227, 231, 10);
+  --hero-name-gradient-color-2: #ea7425;
+  --hero-name-gradient-color-1: #2623b2;
 }
 
 /* dark theme */
@@ -22,6 +24,8 @@
   --btn-hover: #7540ca;
   --cool-char-color: #44f464;
   --cool-char-hover-color: #f55ad6;
+  --hero-name-gradient-color-1: #58f074;
+  --hero-name-gradient-color-2: #f5811b;
 }
 
 section {
@@ -75,30 +79,6 @@ html {
 
 h1 {
   text-align: center;
-}
-
-.about-me-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.about-me-summary {
-  width: 900px;
-  font-size: 1.5rem;
-  font-weight: 350;
-  height: auto;
-  display: flex;
-}
-
-.about-me-image {
-  width: 600px;
-  height: auto;
-  display: flex;
-  border-radius: 20px;
 }
 
 body {

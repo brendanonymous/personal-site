@@ -1,0 +1,24 @@
+.about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-me-summary {
+  width: 900px;
+  font-size: 1.7rem;
+  font-weight: 550;
+  height: auto;
+  display: flex;
+  color: var(--text-color);
+}
+
+.about-me-image {
+  width: 600px;
+  height: auto;
+  display: flex;
+  border-radius: 20px;
+}

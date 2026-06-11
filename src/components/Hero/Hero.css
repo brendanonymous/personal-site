@@ -24,7 +24,7 @@
   font-weight: 900;
   letter-spacing: -0.06em;
 
-  background: linear-gradient(90deg, #58f074, #f5811b);
+  background: linear-gradient(90deg, var(--hero-name-gradient-color-1), var(--hero-name-gradient-color-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

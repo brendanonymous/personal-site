@@ -1,12 +1,14 @@
 import "./Hero.css";
 
+const myName = "Brendan Lauck."
+
 export default function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
         <p className="hero-kicker">Hello! My name is</p>
 
-        <h1 className="hero-name">Brendan Lauck.</h1>
+        <h1 className="hero-name">{myName}</h1>
 
         <h2 className="hero-subtitle">
             I build reliable backend systems, cloud infrastructure, and scalable web applications.
