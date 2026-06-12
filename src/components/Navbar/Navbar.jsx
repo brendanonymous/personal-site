@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import "./Navbar.css"
 
 export default function Navbar({ theme, setTheme }) {
     const toggleTheme = () => {

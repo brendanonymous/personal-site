@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react';
 import './App.css'
 import Projects from './components/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -22,14 +23,15 @@ function App() {
   }, [theme]);
 
   return (
-    <>
+    <div className="app">
       <Navbar theme={theme} setTheme={setTheme}/>
       <Hero />
       <About />
       <Projects />
       <Toolbox theme={theme} />
       <Contact />
-    </>
+      <Footer />
+    </div>
   );
 }
 

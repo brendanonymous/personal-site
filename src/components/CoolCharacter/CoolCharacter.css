@@ -1,0 +1,9 @@
+.cool-char {
+  display: inline-block;
+  color: var(--cool-char-color);
+  transition: color 0.25s ease-out;
+}
+
+.cool-char:hover {
+  color: var(--cool-char-hover-color);
+}

@@ -1,3 +1,5 @@
+import "./CoolCharacter.css"
+
 function CoolCharacter( { character, className } ){
     return (
             <span className={className}>{ character }</span>
