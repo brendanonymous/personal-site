@@ -15,7 +15,11 @@ export default function Contact() {
           }
         </h1>
         <div className="contact-icons">
-            <a href={`${import.meta.env.BASE_URL}/resume.pdf`}>
+            <a
+                href={`${import.meta.env.BASE_URL}/resume.pdf`}
+                target="_blank"
+                rel="noreferrer"
+            >
                 <FaFilePdf size={50} />
             </a>
 
