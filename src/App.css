@@ -3,10 +3,9 @@
   min-height: 100vh;
 }
 
-/*TODO: Fix light theme*/
 /* light theme */
 [color-theme="light"] {
-  --bg-color: rgb(95, 179, 190);
+  --bg-color: rgb(105, 216, 187);
   --text-color: rgb(255, 255, 255);
   --btn-bg: #007bff;
   --btn-hover: #010390;
