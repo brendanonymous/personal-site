@@ -11,7 +11,7 @@
 
   padding: 1.5rem 0;
 
-  background: rgba(24, 24, 24, 0);
+  background-color: var(--navbar-bg-color);
   backdrop-filter: blur(40px);
 
   z-index: 1000;
@@ -21,4 +21,5 @@
 .navbar a {
   color: white;
   font-weight: 700;
+  -webkit-text-stroke: 0.1px rgb(58, 57, 57);
 }

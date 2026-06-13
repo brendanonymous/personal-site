@@ -15,6 +15,7 @@
   font-weight: 600;
   color: var(--text-color);
   margin: 0 0 64px;
+  -webkit-text-stroke: 0.15px rgb(58, 57, 57);
 }
 
 .hero-name {
@@ -35,6 +36,8 @@
   line-height: 1.18;
   font-weight: 600;
   margin: 0 0 80px;
+  -webkit-text-stroke: 0.15px rgb(58, 57, 57);
+
 }
 
 .hero-button {

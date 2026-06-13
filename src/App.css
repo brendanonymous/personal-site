@@ -9,7 +9,7 @@
 
 /* light theme */
 [color-theme="light"] {
-  --bg-color: rgb(105, 216, 187);
+  --bg-color: rgb(120, 222, 164);
   --text-color: rgb(255, 255, 255);
   --btn-bg: #007bff;
   --btn-hover: #010390;
@@ -17,6 +17,7 @@
   --cool-char-hover-color: rgb(227, 231, 10);
   --hero-name-gradient-color-2: #ea7425;
   --hero-name-gradient-color-1: #2623b2;
+  --navbar-bg-color: rgba(171, 200, 76, 0.3);
   --footer-color: rgb(0,0,0);
 }
 
@@ -30,7 +31,8 @@
   --cool-char-hover-color: #f55ad6;
   --hero-name-gradient-color-1: #58f074;
   --hero-name-gradient-color-2: #f5811b;
-  --footer-color: rgb(255, 255, 255);
+  --navbar-bg-color: rgba(77, 50, 96, 0.3);
+  --footer-color: rgb(164, 163, 163);
 }
 
 section {
