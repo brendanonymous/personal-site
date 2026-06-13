@@ -19,7 +19,7 @@
 }
 
 .navbar a {
-  color: white;
+  color: var(--text-color);
   font-weight: 700;
   -webkit-text-stroke: 0.1px rgb(58, 57, 57);
 }

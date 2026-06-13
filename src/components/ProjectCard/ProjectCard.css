@@ -6,7 +6,7 @@
   margin: 0 auto 48px;
   border-radius: 10px;
   overflow: hidden;
-  background: #3f6d6c;
+  background: var(--project-card-bg);
 }
 
 .project-info {
