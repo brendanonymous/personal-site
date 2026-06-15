@@ -1,4 +1,6 @@
-
+* {
+  outline: 1px solid red;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -18,8 +20,48 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
-.navbar a {
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
   color: var(--text-color);
   font-weight: 700;
   -webkit-text-stroke: 0.1px rgb(58, 57, 57);
+}
+
+.theme-toggle {
+  position: absolute;
+  right: 2rem;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .navbar-links {
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-links a {
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  .navbar-links a[href="#toolbox"] {
+    display: none;
+  }
+
+  .theme-toggle {
+    position: static;
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+  }
 }
