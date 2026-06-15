@@ -81,22 +81,3 @@ body {
 .btn:hover {
   background-color: var(--btn-hover);
 }
-
-.theme-toggle-btn {
-  position: absolute;
-  background: none;
-  top: 50%;
-  right: 35px;
-  transform: translateY(-50%);
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-.theme-toggle-btn img {
-  width: 45px;
-  height: 45px;
-}
-.theme-toggle-btn:focus {
-  outline: 0.00001px solid #cecece;
-  border-radius: 20px;
-}

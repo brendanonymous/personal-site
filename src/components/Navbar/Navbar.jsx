@@ -3,8 +3,6 @@ import "./Navbar.css"
 import ThemeToggle from '../ThemeButton/ThemeToggle';
 
 export default function Navbar({ theme, setTheme }) {
-    
-
     return (
         <nav className="navbar">
             <div className="navbar-links">
@@ -14,7 +12,7 @@ export default function Navbar({ theme, setTheme }) {
                 <a href="#toolbox">Toolbox</a>
                 <a href="#contact">Contact</a>
             </div>
-            <ThemeToggle />
+            <ThemeToggle theme={theme} setTheme={setTheme}/>
         </nav>
     );
 }
