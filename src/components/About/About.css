@@ -23,3 +23,21 @@
   display: flex;
   border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+  .about-me-section {
+    align-items: flex-start;
+  }
+
+  .about-me-summary {
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+
+  .about-me-image {
+    display: none;
+  }
+}
