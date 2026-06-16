@@ -11,8 +11,9 @@
 [color-theme="light"] {
   --bg-color: rgb(120, 222, 164);
   --text-color: #0f3f3c;
+  --btn-text-color: rgb(255, 255, 255);
   --btn-bg: #007bff;
-  --btn-hover: #010390;
+  --btn-hover: #86e7ff;
   --cool-char-color: rgb(154, 26, 145);
   --cool-char-hover-color: rgb(227, 231, 10);
   --hero-name-gradient-color-2: #ea7425;
@@ -59,7 +60,6 @@ body {
 }
 
 .container {
-  /* text-align: center; */
   padding: 2rem;
 }
 

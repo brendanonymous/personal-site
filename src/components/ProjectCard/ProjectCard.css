@@ -63,10 +63,14 @@
   padding: 16px 25px;
   border-radius: 999px;
   background: var(--btn-bg);
-  color: var(--text-color);
+  color: var(--btn-text-color);
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none;
+}
+
+.project-actions a:hover {
+  color: var(--btn-hover);
 }
 
 .project-actions img {
