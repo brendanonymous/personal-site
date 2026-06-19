@@ -7,6 +7,7 @@
   border-radius: 10px;
   overflow: hidden;
   background: var(--project-card-bg);
+  box-shadow: 10px 10px 3px #000000be;
 }
 
 .project-info {
@@ -91,10 +92,11 @@
   object-position: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 480px) {
   .project-card {
     grid-template-columns: 1fr;
     min-height: unset;
+    max-width: 80%;
   }
 
   .project-info {
@@ -112,10 +114,24 @@
   }
 
   .tech-list {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
+  
+  .tech-list span {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
 
   .project-image {
-    min-height: 260px;
+    min-height: 160px;
   }
+
+  .project-actions a {
+    gap: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
 }

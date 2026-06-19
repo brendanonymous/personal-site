@@ -24,8 +24,11 @@
   margin: 0 0 80px;
   font-weight: 900;
   letter-spacing: -0.06em;
-
-  background: linear-gradient(90deg, var(--hero-name-gradient-color-1), var(--hero-name-gradient-color-2));
+  background: linear-gradient(
+    90deg,
+    var(--hero-name-gradient-color-1),
+    var(--hero-name-gradient-color-2)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -37,7 +40,6 @@
   font-weight: 600;
   margin: 0 0 80px;
   -webkit-text-stroke: 0.15px rgb(58, 57, 57);
-
 }
 
 .hero-button {
@@ -54,7 +56,7 @@
 }
 
 .hero-button:hover {
-  color: var(--btn-hover)
+  color: var(--btn-hover);
 }
 
 .hero-button img {
@@ -62,46 +64,60 @@
   height: 34px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .hero {
     min-height: 100vh;
-    padding: 115px 24px 32px;
+    padding: 115px 9% 40px;
     align-items: flex-start;
   }
 
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .hero-kicker {
-    font-size: 2.25rem;
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
     line-height: 1.1;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin: 0 0 2rem;
   }
 
   .hero-name {
-    font-size: 4.8rem;
+    font-size: clamp(3.8rem, 15vw, 5.25rem);
     line-height: 0.9;
     letter-spacing: -0.07em;
     text-align: left;
-    margin-bottom: 44px;
+    margin: 0 0 2.75rem;
   }
 
   .hero-subtitle {
-    font-size: 2rem;
-    line-height: 1.18;
-    margin-bottom: 150px;
+    font-size: clamp(1.45rem, 8vw, 2rem);
+    line-height: 1.22;
+    max-width: 40rem;
+    margin: 0 0 clamp(2.5rem, 8vh, 5rem);
   }
 
   .hero-button {
-    font-size: 1.35rem;
-    padding: 14px 30px;
-    align-items: start;
-    gap: 20px;
     display: flex;
-    margin: 0 auto;
     width: fit-content;
+    margin: 0 auto;
+    font-size: 1.35rem;
+    padding: 16px 24px;
+    gap: 10px;
   }
 
   .hero-button img {
     width: 28px;
     height: 28px;
+  }
+}
+
+@media (max-width: 480px) and (min-height: 800px) {
+  .hero {
+    padding-top: 130px;
+  }
+
+  .hero-subtitle {
+    margin-bottom: clamp(5rem, 18vh, 10rem);
   }
 }

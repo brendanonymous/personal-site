@@ -1,3 +1,8 @@
+.about {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+}
+
 .about-me-section {
   display: flex;
   justify-content: center;
@@ -12,32 +17,32 @@
   font-size: 1.7rem;
   font-weight: 550;
   height: auto;
-  display: flex;
   color: var(--text-color);
   -webkit-text-stroke: 0.1px rgb(58, 57, 57);
 }
 
 .about-me-image {
-  width: 600px;
-  height: auto;
-  display: flex;
-  border-radius: 20px;
+  width: min(500px, 80vw);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px #000000be;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .about-me-section {
-    align-items: flex-start;
-  }
-
-  .about-me-summary {
-    width: 80%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    flex-wrap: wrap;
-    text-align: start;
+    flex-direction: column-reverse;
   }
 
   .about-me-image {
-    display: none;
+    width: min(360px, 80vw);
+    box-shadow: 10px 10px 3px #000000be;
+  }
+
+  .about-me-summary {
+    max-width: 90%;
+    font-size: clamp(0.9rem, 5vw, 1.1rem);
+    font-weight: 550;
   }
 }

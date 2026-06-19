@@ -7,46 +7,13 @@
   min-height: 100vh;
 }
 
-/* light theme */
-[color-theme="light"] {
-  --bg-color: rgb(120, 222, 164);
-  --text-color: #0f3f3c;
-  --btn-text-color: rgb(255, 255, 255);
-  --btn-bg: #007bff;
-  --btn-hover: #86e7ff;
-  --cool-char-color: rgb(154, 26, 145);
-  --cool-char-hover-color: rgb(227, 231, 10);
-  --hero-name-gradient-color-2: #ea7425;
-  --hero-name-gradient-color-1: #3836b6;
-  --navbar-bg-color: rgba(171, 200, 76, 0.3);
-  --footer-color: rgb(0,0,0);
-  --project-card-bg: rgb(153, 168, 220);
-}
-
-/* dark theme */
-[color-theme="dark"] {
-  --bg-color: #333333;
-  --text-color: rgb(251, 243, 207);
-  --btn-bg: #bb86fc;
-  --btn-hover: #7540ca;
-  --cool-char-color: #44f464;
-  --cool-char-hover-color: #f55ad6;
-  --hero-name-gradient-color-1: #58f074;
-  --hero-name-gradient-color-2: #f5811b;
-  --navbar-bg-color: rgba(77, 50, 96, 0.3);
-  --footer-color: rgb(164, 163, 163);
-  --project-card-bg: #3f6d6c;
-}
-
 section {
-  scroll-margin-top: 90px;
   min-height: 100vh;
-  scroll-snap-align: start;
+  scroll-margin-top: 90px;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 h1 {
@@ -78,6 +45,38 @@ body {
   border-radius: 20px;
   transition: background-color 1s ease-out;
 }
+
 .btn:hover {
   background-color: var(--btn-hover);
+}
+
+/* light theme */
+[color-theme="light"] {
+  --bg-color: rgb(120, 222, 164);
+  --text-color: #0f3f3c;
+  --btn-text-color: rgb(255, 255, 255);
+  --btn-bg: #007bff;
+  --btn-hover: #86e7ff;
+  --cool-char-color: rgb(154, 26, 145);
+  --cool-char-hover-color: rgb(227, 231, 10);
+  --hero-name-gradient-color-2: #ea7425;
+  --hero-name-gradient-color-1: #3836b6;
+  --navbar-bg-color: rgba(171, 200, 76, 0.3);
+  --footer-color: rgb(0,0,0);
+  --project-card-bg: rgb(153, 168, 220);
+}
+
+/* dark theme */
+[color-theme="dark"] {
+  --bg-color: #333333;
+  --text-color: rgb(251, 243, 207);
+  --btn-bg: #bb86fc;
+  --btn-hover: #7540ca;
+  --cool-char-color: #44f464;
+  --cool-char-hover-color: #f55ad6;
+  --hero-name-gradient-color-1: #58f074;
+  --hero-name-gradient-color-2: #f5811b;
+  --navbar-bg-color: rgba(77, 50, 96, 0.3);
+  --footer-color: rgb(164, 163, 163);
+  --project-card-bg: #3f6d6c;
 }

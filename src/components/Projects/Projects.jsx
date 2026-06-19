@@ -10,7 +10,7 @@ export default function Projects(){
             <h1>
                 {
                     projectsTitle.split("").map((char, index) => (
-                    <CoolCharacter className="cool-char" key={index} character={char === " " ? '\u00A0' : char} />
+                        <CoolCharacter className="cool-char" key={index} character={char === " " ? '\u00A0' : char} />
                     ))
                 }
             </h1>
